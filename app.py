@@ -8,9 +8,11 @@ def index():
     if request.method == "POST":
         try:
             image_url = request.form.get("imagelink")
-            img_loc = 'img_out/' + all_image_details(image_url)[0] + '.jpg'
+            img_det = all_image_details(image_url)
+            img_loc = 'img_out/' + img_det[0] + '.jpg'
+            face_attributes = img_det[1]
             print(img_loc)
-            return render_template('output.html', img_loc=img_loc)
+            return render_template('output.html', img_loc=img_loc, face_attributes = face_attributes)
         except Exception as e:
             print(e)
     else:

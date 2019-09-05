@@ -26,7 +26,11 @@ def organize_data(face_data_raw):
         "face_top" : face_data_raw[0]["faceRectangle"]["top"],
         "face_left" : face_data_raw[0]["faceRectangle"]["left"],
         "face_w" : face_data_raw[0]["faceRectangle"]["width"],
-        "face_h" : face_data_raw[0]["faceRectangle"]["height"]
+        "face_h" : face_data_raw[0]["faceRectangle"]["height"],
+        "gender" : face_data_raw[0]["faceAttributes"]["gender"],
+        "age" : face_data_raw[0]["faceAttributes"]["age"],
+        "glasses" : face_data_raw[0]["faceAttributes"]["glasses"]
+        
     }
     print(face_data_organized)
     return face_data_organized
