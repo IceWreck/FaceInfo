@@ -3,7 +3,7 @@ import time
 
 def download_image(image_link):
     img_name = str(time.time()).split('.')[0]
-    out_filepath = "img_dl/" + img_name + ".jpg"
+    out_filepath = "static/img_dl/" + img_name + ".jpg"
     down_file = wget.download(image_link, out=out_filepath)
     return img_name
 

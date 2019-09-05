@@ -6,8 +6,6 @@ assert subscription_key
     
 face_api_url = 'https://westcentralus.api.cognitive.microsoft.com/face/v1.0/detect'
 
-# image_url = 'https://upload.wikimedia.org/wikipedia/commons/3/37/Dagestani_man_and_woman.jpg'
-
 headers = {'Ocp-Apim-Subscription-Key': subscription_key}
 
 params = {
