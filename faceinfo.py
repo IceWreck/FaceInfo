@@ -1,7 +1,7 @@
 import requests
 import json
 
-subscription_key = "db453537d41a4a89b26ca9fba22a58e7"
+subscription_key = "YOUR_KEY_HERE"
 assert subscription_key
     
 face_api_url = 'https://westcentralus.api.cognitive.microsoft.com/face/v1.0/detect'
